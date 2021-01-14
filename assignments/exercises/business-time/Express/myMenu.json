@@ -1,0 +1,84 @@
+{
+"burgers": [
+    {
+    "name": "Mac Burger",
+    "description": "The infamous mac and cheese burger fully loaded. 11.99",
+    "img": "/images/macburger.jpg"
+    },
+    {
+    "name": "Fried Chicken Sandwich",
+    "description": "Homestyle fried chicken sandwich with slaw on top. 11.99",
+    "img": "/images/homeburger.png"
+    },
+    {
+    "name": "Swiss Burger",
+    "description": "Swiss cheese, mushrooms and carmelized onions. 10.99",
+    "img": "/images/swissburger.jpg"
+    },
+    {
+    "name": "Peanut Butter Burger",
+    "description": "You choose of cheese, with peanut butter and jalapenos.Spiced jelly optional. 10.99",
+    "img": "/images/pbburger.jpg"
+    },
+    {
+    "name": "Veggie Burger",
+    "description": "Black bean veggie patty with  3 toppings of choose. 9.99",
+    "img": "/images/blackbeanburger.jpg"
+    }
+    ],
+"desserts": [
+    {
+    "name": "Chocolate Chip Cookies",
+    "description": "Homemade chocolate chip cookies. 2.99",
+    "img": "/images/chococookie.jpg"
+    },
+    {
+        "name": "Ice Cream",
+        "description": "Chocolate, Strawberry or Vanilla icecream. 1.99",
+        "img": "/images/icecream.jpg"
+        },
+    {
+    "name": "Lava Cake",
+    "description": "Warm lava cake with your choose of icecream. 5.99",
+    "img": "/images/lavacake.jpg"
+    },
+    {
+    "name": "Original Cheesecake",
+    "description": "Delicious New York cheesecake. 4.99",
+    "img": "/images/cheesecake.jpg"
+    },
+    {
+    "name": "Bread Pudding",
+    "description": "Bourbon soaked bread pudding with whip cream. 5.99",
+    "img": "/images/breadpudding.jpg"
+    }
+    ],
+
+"sides": [
+    {
+    "name": "Garlic Fries",
+    "description": "Garlic fries with fry sauce. 3.99",
+    "img": "/images/garlicfries.jpg"
+    },
+    {
+    "name": "Ceasar Salad",
+    "description": "Classic ceasar salad with croutons. 4.99",
+    "img": "/images/ceasar.jpg"
+    },
+    {
+    "name": "House Salad",
+    "description": "House salad with tomatos, carrots, cucucumbers and choose of dressing. 4.99",
+    "img": "/images/farmers-salad.jpg"
+    },
+    {
+    "name": "Mac and Cheese",
+    "description": "Baked mac and cheese with panko crumbs. 4.99",
+    "img": "/images/crusty-mac.jpg"
+    },
+    {
+    "name": "Onion Rings",
+    "description": "Beer battered onion rings with ranch or fry sauce.",
+    "img": "/images/onionrings.jpg"
+    }
+    ]
+}
