@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p 
+    each item in myMenuJson
+        div
+         p #{item.name}
+         p #{item.description}
+         img(src=item.img)
+        

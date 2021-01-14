@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet' href='/stylesheets/style.css')
+  body
+    block navBar
+    div
+      ul.myNav
+        li(class=(title === 'Home' ? 'active' : ''))
+            a(href='/') Home
+        li(class=(title === 'Directions' ? 'active' : ''))
+            a(href='/directions') Directions
+        li(class=(title === 'Burgers' ? 'active' : ''))
+            a(href='burgers') Burgers
+        li(class=(title === 'Desserts' ? 'active' : ''))
+            a(href='desserts') Desserts
+        li(class=(title === 'Sides' ? 'active' : ''))
+            a(href='sides') Sides
+    block content
+    block footer
+      #footer
+        p Contact: 615-785-5311
+        p Address: 360 South 400 West, Salt Lake City, Utah, 84101
+        
+    
+    
