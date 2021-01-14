@@ -1,0 +1,219 @@
+
+
+body {
+    background-color: #f5f5dc;
+  }
+.allFlags {
+  display: flex;
+}
+.flags1 {
+  flex-direction: column;
+}
+.flags2 {
+  flex-direction: column;
+  margin: -1px 5px;
+}
+.france {
+    display: flex;
+    width: 200px;
+    border: 1px solid #000000;
+ }
+
+  .colorf1 {
+    width: 70px;
+    height: 110px;
+    background-color: #002495;
+  }
+
+  .colorf2 {
+    width: 70px;
+    height: 110px;
+    background-color:#ffffff;
+  }
+
+  .colorf3 {
+    width: 70px;
+    height: 110px;
+    background-color:#ED2938;
+  }
+  .germany {
+    margin-top: 5px;
+    width: 200px;
+    border: 1px solid #000000;
+  }
+  .colorg1 {
+    width: 200px;
+    height: 45px;
+    background-color: #000000;
+  }
+
+  .colorg2 {
+    width: 200px;
+    height: 45px;
+    background-color: #DE0002;
+  }
+
+  .colorg3 {
+    width: 200px;
+    height: 45px;
+    background-color:#FFCE00;
+  }
+  
+  .madagascar {
+      margin-top: 5px;
+      display: flex;
+      width: 200px;
+      border: 1px solid #000000;
+  }
+  .colorm1 {
+    width: 65px;
+    height: 125px;
+    background-color:#ffffff;
+  }
+
+  .colorm2 {
+    width: 135px;
+    height: 70px;
+    background-color:#FC3E32;
+  }
+  .colorm3 {
+    margin-top:65px;
+    margin-left: -135px;
+    width: 135px;
+    height: 65px;
+    background-color:#007E39;
+  }
+
+  .switzerland {
+    margin-top: 5px;
+    width: 200px;
+    display: flex;
+    border: 1px solid #000000;
+  }
+  .colorsw1 {
+    width: 200px;
+    height: 145px;
+    background-color:#FF0002;
+  }
+
+  .colorsw2 {
+    margin-top:60px;
+    margin-left: -152px;
+    width: 100px;
+    height: 30px;
+    background-color:#ffffff;
+  }
+
+  .colorsw3 {
+    margin-top:25px;
+    margin-left: -65px;
+    width: 30px;
+    height: 100px;
+    background-color:#ffffff;
+  }
+
+  .sweden {
+    width: 200px;
+    display: flex;
+    border: 1px solid#000000;
+  }
+
+  .colors1 {
+    width: 200px;
+    height: 125px;
+    background-color: #0269A6;
+  }
+
+  .colors2 {
+    margin-top:50px;
+    margin-left: -200px;
+    width: 200px;
+    height: 25px;
+    background-color:#FECC00;
+  }
+
+  .colors3 {
+    margin-top:0px;
+    margin-left: -135px;
+    width: 25px;
+    height: 125px;
+    background-color:#FECC00;
+  }
+
+  .gambia {
+    margin-top: 5px;
+    width: 200px;
+    border: 1px solid#000000;
+    background-color: #ffffff;
+  }
+
+  .colorga1 {
+    width: 200px;
+    height: 45px;
+    background-color:#CE1127;
+  }
+
+  .colorga2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 30px;
+    background-color: #0D1D8B;
+  }
+
+  .colorga3 {
+    width: 200px;
+    height: 45px;
+    background-color: #3B7827;
+  }
+
+  .japan {
+    margin-top: 5px;
+    width: 200px;
+    display: flex;
+    border: 1px solid#000000;
+  }
+
+  .colorj1 {
+    width: 200px;
+    height: 125px;
+    background-color: #ffffff;
+  }
+
+  .colorj2 {
+    margin-top:28px;
+    margin-left: -138px;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color:#BC022C;
+  }
+
+  .niger {
+    margin-top: 5px;
+    width: 200px;
+    border: 1px solid #000000;
+    background-color:#ffffff
+  }
+
+  .colorn1 {
+    width: 200px;
+    height: 50px;
+    background-color:#E15307;
+  }
+
+  .colorn2 {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 75px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #E15307;
+  }
+
+  .colorn3 {
+    width: 200px;
+    height: 50px;
+    background-color: #10AF2A;
+  }
