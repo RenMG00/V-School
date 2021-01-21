@@ -36,7 +36,7 @@ function mul(num1, num2) {
 };
 
 function div(num1, num2) {
-    if (Number(num1 === 0))
+    if (Number(num2 === 0))
     console.log("Do not divide by 0.");
     return (Number(num1) / Number(num2));
 };
