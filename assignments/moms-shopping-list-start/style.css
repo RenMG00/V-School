@@ -1,0 +1,50 @@
+.title {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.main {
+    border: 1px dashed black;
+    width: 50%;
+    margin: auto;
+    background-color: beige;
+}
+
+#add-item {
+    border: 1px solid black;
+}
+
+.input {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-family: 'Franklin Gothic Medium';
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#submit {
+    border-radius: 10px;
+}
+
+.label {
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+#list {
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium';
+    display: flex;
+}
+
+#list > li{
+    list-style-type: none;
+    margin: 10px auto;
+}
+
+#list div {
+    margin-bottom: 10px;
+    text-align: center;
+}
