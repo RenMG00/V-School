@@ -1,6 +1,5 @@
 const form = document["addItem"]
 
-
 // Submit event
 
 form.addEventListener("submit", function (event) {
@@ -16,7 +15,6 @@ form.addEventListener("submit", function (event) {
     listItem.textContent = addedItem
     listDiv.prepend(addedItem)
 
-    const label = document.createElement("label");
     const editButton = document.createElement("button")
     editButton.textContent = "Edit"
     editButton.style.margin = "2px"
@@ -26,22 +24,22 @@ form.addEventListener("submit", function (event) {
 
     function updateAndSave() {
         
-        var list = this.parentNode;
-        var updatedInput = document.querySelector("input");
-        const updatedItem = updatedInput.value
-        updatedInput.textContent = updatedItem
-        var label = list.querySelector("label");
-        var containsClass = list.classList.contains("editMode");
+        var listItem = this.parentNode;
+        var editInput = listItem.querySelector("input");
+        editInput.textContent = updatedItem
+
+        var containsClass = listItem.classList.contains("editMode");
+        
         //If class of the parent is .editmode
         if (containsClass) {
             //switch to .editmode
             //label becomes the inputs value.
-            label.textContent = updatedInput.value;
+            updatedItem.textContent = editInput.value;
         } else {
-            updatedInput.value = label.textContent;
+            editInput.value = addedItem.textContent;
         }
         //toggle .editmode on the parent.
-        list.classList.toggle("editMode");
+        listItem.classList.toggle("editMode");
     }
 
     const deleteButton = document.createElement("button")
