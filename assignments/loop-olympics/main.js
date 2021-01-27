@@ -84,3 +84,50 @@ for (let i = 0; i < peopleArray.length; i++) {
 }
 console.log(names);
 console.log(occupations);
+
+// Gold: Nested for loops
+
+let array1 = [];
+
+for (var i = 0; i < 3; i++) {
+    let array2 = [];
+    for (var j = 0; j < 3; j++) {
+        array2[j] = 0;
+    }
+    array1[i] = array2;
+}
+console.log(array1)
+
+let array3 = [];
+
+for (var i = 0; i < 3; i++) {
+    let array2 = [];
+    for (var j = 0; j < 3; j++) {
+        array2[j] = i;
+    }
+    array3[i] = array2;
+}
+console.log(array3)
+
+let array4 = [];
+
+for (var i = 0; i < 3; i++) {
+    let array2 = [];
+    for (var j = 0; j < 3; j++) {
+        array2[j] = j;
+    }
+    array4[i] = array2;
+}
+console.log(array4)
+
+let grid = [];
+
+for (var i = 0; i < 3; i++) {
+    let array2 = [];
+    let x = "x";
+    for (var j = 0; j < 3; j++) {
+        array2[j] = x;
+    }
+    grid[i] = array2;
+}
+console.log(grid)
