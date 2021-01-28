@@ -2,7 +2,7 @@
 var form = document.getElementById("airlineForm");
 form.addEventListener("submit", formAlert);
 
-function formAlert(e) {
+function formAlert() {
     e.preventDefault();
 
     var firstName = form.elements["firstName"].value;
