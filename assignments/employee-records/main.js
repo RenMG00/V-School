@@ -12,9 +12,9 @@ function Employee (Name, JobTitle, Salary, Status = "Full-Time") {
 
 // then we "instantiate" (create a new object from) our constructor with the "new" keyword and pass in the parameters:
 
-var person1 = new Employee("Monica Pierce", "Sales-Rep", "$2,500/month", "Part-Time");
-var person2 = new Employee("Don Glover", "Manager", "$3,500/month", "Full-time");
-var person3 = new Employee("Drew Matthews", "Assistant", "$2,000/month", "Full-time");
+let person1 = new Employee("Monica Pierce", "Sales-Rep", "$2,500/month", "Part-Time");
+let person2 = new Employee("Don Glover", "Manager", "$3,500/month", "Full-time");
+let person3 = new Employee("Drew Matthews", "Assistant", "$2,000/month", "Full-time");
 
 Employee.prototype.statusChange = function(){
     person1.Status = "Part-Time";
