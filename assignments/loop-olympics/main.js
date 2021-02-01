@@ -2,12 +2,12 @@
 [...Array(9)].forEach((e, i) => console.log(++i));
 
 // Print the numbers 9-0 in the console.
-for (var i of [8, 7, 6, 5, 4, 3, 2, 1, 0]) console.log(++i);
+for (let i of [8, 7, 6, 5, 4, 3, 2, 1, 0]) console.log(++i);
 
 // Print all items from the array to the console.
-var fruit = ["banana", "orange", "apple", "kiwi"]
+let fruit = ["banana", "orange", "apple", "kiwi"]
 
-for (var i = 0; i < fruit.length; i++) {
+for (let i = 0; i < fruit.length; i++) {
     console.log(fruit[i]);
 }
 
@@ -33,16 +33,16 @@ console.log(factorialize(9));
 })
 
 // Print every other item from the array to the console.
-var fruit = ["banana", "orange", "apple", "kiwi", "pear", "peach"]
+let fruit = ["banana", "orange", "apple", "kiwi", "pear", "peach"]
 
-for (var i = 0; i < fruit.length; i++) {
+for (let i = 0; i < fruit.length; i++) {
     if (i % 2 === 0) {
         console.log(fruit[i]);
     }
 }
 
 //Silver: Print out all names of people to the console.
-var peopleArray = [
+let peopleArray = [
     {
         name: "Harrison Ford",
         occupation: "Actor"
@@ -61,7 +61,7 @@ var peopleArray = [
     }
 ]
 
-for (var i = 0; i < peopleArray.length; i++) {
+for (let i = 0; i < peopleArray.length; i++) {
     console.log(peopleArray[i].name);
 }
 
@@ -89,9 +89,9 @@ console.log(occupations);
 
 let array1 = [];
 
-for (var i = 0; i < 3; i++) {
+for (let i = 0; i < 3; i++) {
     let array2 = [];
-    for (var j = 0; j < 3; j++) {
+    for (let j = 0; j < 3; j++) {
         array2[j] = 0;
     }
     array1[i] = array2;
@@ -100,9 +100,9 @@ console.log(array1)
 
 let array3 = [];
 
-for (var i = 0; i < 3; i++) {
+for (let i = 0; i < 3; i++) {
     let array2 = [];
-    for (var j = 0; j < 3; j++) {
+    for (let j = 0; j < 3; j++) {
         array2[j] = i;
     }
     array3[i] = array2;
@@ -111,9 +111,9 @@ console.log(array3)
 
 let array4 = [];
 
-for (var i = 0; i < 3; i++) {
+for (let i = 0; i < 3; i++) {
     let array2 = [];
-    for (var j = 0; j < 3; j++) {
+    for (let j = 0; j < 3; j++) {
         array2[j] = j;
     }
     array4[i] = array2;
@@ -122,10 +122,10 @@ console.log(array4)
 
 let grid = [];
 
-for (var i = 0; i < 3; i++) {
+for (let i = 0; i < 3; i++) {
     let array2 = [];
     let x = "x";
-    for (var j = 0; j < 3; j++) {
+    for (let j = 0; j < 3; j++) {
         array2[j] = x;
     }
     grid[i] = array2;
