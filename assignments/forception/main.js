@@ -1,18 +1,18 @@
-var people = ["Jon", "Jacob", "Jingle", "Heimer", "Schmidt"]
-var alphabet = "abcdefghijklmnopqrstuvwxyz"
+let people = ["Jon", "Jacob", "Jingle", "Heimer", "Schmidt"]
+let alphabet = "abcdefghijklmnopqrstuvwxyz"
 
 function forception(people, alphabet){
-    var alphaArray = [];
+    let alphaArray = [];
 
-    for(var i = 0; i < alphabet.length; i++) {
+    for(let i = 0; i < alphabet.length; i++) {
         alphaArray[i] = alphabet[i].toUpperCase();
     }
 
-    var peopleArray = [];
+    let peopleArray = [];
 
-    for(var i = 0; i < people.length; i++) {
+    for(let i = 0; i < people.length; i++) {
         peopleArray.push(people[i] + ":");
-        for (var k = 0; k < alphaArray.length; k++) {
+        for (let k = 0; k < alphaArray.length; k++) {
             peo9ipleArray.push(alphaArray[k]);
         }
     }
