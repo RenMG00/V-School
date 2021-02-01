@@ -1,6 +1,6 @@
 
 // Part 1: How many office items?
-var officeItems = [
+let officeItems = [
     "stapler",
     "monitor",
     "computer",
@@ -20,7 +20,7 @@ for (let i = 0; i < officeItems.length; i++) {
 console.log(counter);
 
 //Part 2: Too Old or Too Young?
-var people = [
+let people = [
     {
         name: "Mike",
         age: 12,
@@ -44,7 +44,7 @@ var people = [
     }
 ] 
 
-for (var i = 0; i < people.length; i++) {
+for (let i = 0; i < people.length; i++) {
     if (people[i].age < 18) {
         console.log("Not old enough!")
     } else {
