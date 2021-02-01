@@ -117,13 +117,13 @@ while (game) {
             console.log("Up ahead in the distance, you see a shimmering light.");
             break;
         case 2:
-            console.log("This could be heaven or this could be hell!");
+            console.log("Your head is growing heavy and your sight is growing dim.");
             break;
         case 3:
-            console.log("Your head grows heavy and your sight grows dim.");
+            console.log("There she stands in the doorway. You hear the mission bell!.");
             break;
         case 4:
-            console.log("There she stands in the doorway. You hear the mission bell!");
+            console.log("You are thinking to yourself, could this be heaven or hell?");
             break;
         case 5:
             console.log("She lights up a candle and she shows you the way.");
