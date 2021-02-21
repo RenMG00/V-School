@@ -1,0 +1,416 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: verdeModerna;
+    src: url(../fonts/verdemoderna.woff);
+}
+
+@font-face {
+    font-family: juliusSansOne;
+    src: url(../fonts/1Pt2g8TAX_SGgBGUi0tGOYEga5WOwnsXy6KHHg.woff2);
+}
+
+@font-face {
+    font-family: libreBakersville;
+    src: url(../fonts/kmKnZrc3Hgbbcjq75U4uslyuy4kn0qNZaxMaC82U.woff2);
+}
+
+@font-face {
+    font-family: libreBakersvilleItalic;
+    src: url(../fonts/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWxEQDO-Wyrs.woff2);
+}
+body {
+    display: grid;
+    color: #325050;
+    background: #fff;
+    font-family: 'libreBaskerville';
+    font-size: 70%;
+}
+#gardenBox {
+    display: grid;
+    grid-template-columns: repeat, (5, 1fr);
+    grid-template-rows: repeat,(10, 1fr);
+}
+
+a {
+    font-family: 'libreBakersville';
+}
+#enso-circle {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    padding: 0px 50px 0px 0px;
+    margin: 10px 1225px -142px 0;
+    background: url(enso.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.6;
+}
+h1 {
+    font-family: 'juliusSansOne';
+   
+}
+h2 {
+    font-family: 'juliusSansOne';
+    font-size: 25px;
+}
+p {
+    font-family: 'libreBakersville';
+    line-height: 1.6;
+    padding: 0px 0px;
+    font-size: 14px;
+}
+#header-div {
+    grid-column: 1 / 6;
+    grid-row: 1 / 1;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #2d6360 50% 0 url(images/huntington.jpg) no-repeat;
+    background-image: url(images/gridlines-opaque.png), url(images/contours-opaque.png), url(images/huntington.jpg);
+    background-size: auto cover;
+    background-repeat: repeat no-repeat;
+    background-attachment: fixed;
+}
+#header-banner {
+    background-size: cover;
+    background-color: transparent;
+}
+
+#title {
+    padding: 0 10px;
+    margin: 60px 850px 90px 0px;
+    color: #fff;
+    font-weight:lighter;
+    border-bottom: none;
+    font-family: 'juliusSansOne';
+    font-size: 30px;
+    text-transform: uppercase;
+}
+#intro {
+    margin: -80px 900px 500px 0px;
+    font-weight: normal;
+    border-bottom: none;
+    font-family: 'libreBakersvilleItalic';
+    color: lightgray;
+    font-size: 15px;
+}
+
+#all-designs {
+    margin: -570px 100px 200px 1000px;
+    border-bottom: none;
+    font-family: 'juliusSansOne';
+    color: gray;
+}
+#designs {
+    color: gray;
+    font-family: 'juliusSansOne';
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+#designHover {
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 300px;
+    border: 0.5px solid white;
+    background-color: lightgray;
+    opacity: 0.6;
+    
+}
+#designHover:hover {
+    background-color: white;
+    opacity: 0.7;
+}
+#boxThree {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    padding: 50px 10px 0px 42px;
+    width: 70%;
+    line-height: 2.0;
+    font-size: 15px;
+    border: 1px solid lightgray;
+}
+.paraDiv {
+    width: 75%;
+}
+#boxFour {
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    text-decoration: none;
+}
+#designerNames {
+    list-style: none;
+    text-decoration: none;
+    justify-content: left;
+    background-color: lightgray;
+}
+.designList {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: lightgray;
+    width: 50%;
+    border-top: solid 1px #d9e3dc;
+    
+}
+.design {
+    text-decoration: none;
+    color: gray;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'juliusSansOne';
+    font-size: 15px;
+    font-style: normal;
+    text-transform: uppercase;
+    border-bottom-width: 1px;
+}
+span {
+    display:inline-block;
+}
+.name {
+    text-decoration: none;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 2px;
+    font-family: 'libreBakersville';
+    font-size: 10px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: darkslategrey;
+}
+
+#boxFive {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    padding: 0px 0px 0px 42px;
+    width: 70%;
+    border: 1px solid lightgray;
+    background-color: rgba(138,188,159,0.5);
+    background-image: url(images/gridlines-opaque.png), url(images/contours-opaque.png), url(images/bamboo.png);
+    background-size: auto cover;
+    background-repeat: repeat no-repeat;
+    background-attachment: scroll scroll fixed;
+    font-size: 10px;
+}
+
+#resources {
+    grid-column: 4 / 6;
+    grid-row: 4 / 6;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid lightgray;
+    background-color: rgba(138,188,159,0.5);
+    background-image: url(images/gridlines-opaque.png), url(images/contours-opaque.png), url(images/bamboo.png);
+    background-size: auto cover;
+    background-repeat: repeat no-repeat;
+    background-attachment: scroll scroll fixed;
+    font-family: 'juliusSansOne';
+    text-decoration: none;
+    border-top: solid 1px #d9e3dc;
+    border-bottom-width: 1px;
+}
+
+#requirements {
+    grid-column: 1 /4;
+    grid-row: 6 / 8;
+    padding: 40px 15px 50px 42px;
+    line-height: 1.6;
+    border: 1px solid lightgray;
+    font-size: 20px;
+}
+#linkList {
+    padding-left: 25px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.links {
+    padding: 20px;
+}
+.a-links {
+    padding: 5px;
+    font-size: 20px;
+    color: gray;
+    text-decoration: none;
+    font-family: 'juliusSansOne';
+    border-top: solid 1px #d9e3dc;
+    border-bottom-width: 1px;
+}
+#boxEight {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+}
+
+#boxNine {
+    grid-column: 1 / 10;
+    grid-row: 9 / 10;
+    height: 200px;
+    border: 1px solid lightgray;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #2d6360 50% 0 url(images/huntington.jpg) no-repeat;
+    background-image: url(images/gridlines-opaque.png), url(images/contours-opaque.png), url(images/huntington.jpg);
+    background-size: auto cover cover;
+    background-repeat: repeat no-repeat;
+    background-attachment: fixed fixed fixed;
+}
+#authorInfo {
+    padding-top: 50px;
+    font-size: 30px;
+    font-family:'libreBakersvilleItalic';
+}
+.author {
+    font-family: 'libreBakersville';
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+#boxTen {
+    grid-column: 1 / 10;
+    grid-row: 10 / 10;
+    height: 60px;
+    padding-top: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #2d6360;
+    font-family: 'verdemoderna';
+}
+.bottomIcons {
+    font-family: 'verdemoderna';
+    padding: 0px 100px 0px 60px;
+    font-size: 40px;
+    text-decoration: none;
+    color: darkslategrey;
+}
+
+@media only screen and (max-width: 1130px) { 
+
+    #gardenBox {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat,(12, 1fr);
+    }
+    #header-banner {
+        background-size: cover;
+        background-color: transparent;
+    }
+    #enso-circle {
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        padding: 0px 0px 25px 300px;
+        margin: 10px 1225px -150px 0;
+}
+    #title {
+        justify-content: center;
+        text-align: center;
+        padding: 18px;
+        margin: 25px 0px 00px 50px;
+    }
+    h2 {
+        padding-top: 2px;
+    }
+    #intro {
+        margin: 0px 0px 0px 50px;
+        font-size: 20px;
+        display: inline;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #all-designs {
+        margin: 55px 200px 0px 0px;
+    }
+    #designHover {
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 1100px;
+    }
+    #boxThree {
+        grid-column: 1 / 1;
+        grid-row-start: 2 / 4;
+        grid-row-end: 4;
+        width: 1050px;
+        padding: 50px 10px 0px 42px;
+    }
+    #boxFour {
+        grid-column: 1 / 1;
+        grid-row: 10 / 11;
+        border: 1px solid lightgray;
+        text-decoration: none;
+        width: 1100px;
+    }
+    .designList {
+        display: block;
+    }
+    #designerNames {
+        text-align: center;
+        justify-content: center;
+        padding: 0px 0px 0px 325px;
+    }
+    #boxFive {
+        grid-column: 1 / 1;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        width: 1050px;
+    }
+    #resources {
+        grid-column: 1 / 1;
+        grid-row: 11 / 12;
+        text-align: center;
+    }
+   
+    #requirements {
+        grid-column: 1 /1;
+        grid-row: 6 / 8;
+        width: 1050px;
+        padding: 40px 15px 50px 42px;
+        line-height: 1.6;
+        border: 1px solid lightgray;
+        font-size: 20px;
+    }
+
+    #boxNine {
+        grid-column: 1 / 1;
+        grid-row: 8 / 9;
+    }
+    #authorInfo {
+        padding-top: 50px;
+        font-size: 20px;
+        font-family:'libreBakersvilleItalic';
+    }
+    .author {
+        font-family: 'libreBakersville';
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+    }
+    #boxTen {
+        grid-column: 1 / 1;
+        grid-row: 9 / 10;
+    }
+}
