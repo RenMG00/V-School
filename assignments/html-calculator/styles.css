@@ -1,0 +1,48 @@
+#mathOperations {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#addition {
+    display: flex;
+    flex-direction: row;
+    background-color:#D291BC;
+    margin-bottom: 10px;
+}
+
+#subtraction {
+    display: flex;
+    flex-direction: row;
+    background-color: #B5EAD7;
+    margin-bottom: 10px;
+}
+
+#multiplication {
+    display: flex;
+    flex-direction: row;
+    background-color: #C7CEEA;
+    margin-bottom: 10px;
+}
+
+#addResult {
+    width: 100px;
+    padding: 0px 0px 2px 50px;
+}
+#subResult {
+    width: 100px;
+    padding: 0px 0px 0px 25px;
+}
+#mulResult {
+    width: 100px;
+    padding: 0px 0px 0px 30px;
+}
+p {
+    margin: 0px 0px 2px 0px;
+}
+body {
+    width: 50%;
+    display:relative;
+    flex-direction:column; 
+    background-color:oldlace;
+}
