@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Travel Form</title>
+</head>
+
+<body>
+    <div id="travelCard">
+        <form id="travel" name="travelForm">
+            <input type="text" class="inputBox" name="firstName" placeholder="First Name">
+            <input type="text" class="inputBox" name="lastName" placeholder="Last Name">
+            <input type="number" class="inputBox" name="age" placeholder="age" placeholder="Age">
+            <br>
+            <label for="female">female</label>
+            <input type="radio" class="genButton" name="gender" value="female" placeholder="female">
+            <label for="male">male</label>
+            <input type="radio" class="genButton"name="gender" value="male" placeholder="male">
+            <br>
+            <label for="destination">Select Destination</label>
+                <select name="destination">
+                    <option value="domestic">Domestic</option>
+                    <option value="canada">Canada</option>
+                    <option value="mexico">Mexico</option>
+                </select>
+            <br>
+            <label for="dayTravel">Morning</label>
+            <input type="radio" class="time" name="travelTime" value="morning">
+            <label for="eveningTravel">Evening</label>
+            <input type="radio" class="time"name="travelTime" value="evening">
+            <br>
+            <label for="vegan">Vegan</label>
+            <input class="food" type="checkbox" name="vegan" id="vegan" value="vegan">
+            <label for="gluten">Gluten</label>
+            <input class="food" type="checkbox" name="gluten" id="gluten" value="gluten-free">
+            <label for="paleo">Paleo</label>
+            <input class="food" type="checkbox" name="paleo" id="paleo" value="paleo">
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
