@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Lucida Sans';
+    font-size: 30px;
+    margin-top: 50px;
+}
+audio {
+    margin: 100px 600px;
+    text-align: center;
+ }
+#djBox {
+    width: 100%;
+    display: flex;
+}
+
+#boxOne {
+    margin: 50px auto;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 0px;
+    background-color:red;
+    transition: background-color, height, width, border-radius, 500ms, linear, 100ms;
+    
+}
+
+#boxTwo {
+    margin: 50px auto;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 0px;
+    background-color: green;
+    transition: background-color, height, width, border-radius, 500ms, linear, 100ms;
+    
+}
+#boxThree {
+    margin: 50px auto;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 0px;
+    background-color: blue;
+    transition: background-color, height, width, border-radius, 500ms, linear, 100ms;
+    
+}
+
+#boxFour {
+    margin: 50px auto;
+    padding: 5px 0px;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 0px;
+    background-color:purple;
+    transition: background-color, height, width, border-radius, 500ms, linear, 100ms;
+    
+}
+#boxFive {
+    margin: 50px auto;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 0px;
+    background-color:yellow;
+    transition: background-color, height, width, border-radius, 500ms, linear, 100ms;
+    
+}
+#boxSix {
+    margin: 50px auto;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 0px;
+    background-color:orange;
+    transition: background-color, height, width, border-radius, 500ms, linear, 100ms;
+    
+}
+
+#boxOne:hover {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    background-color:#fa8072;
+}
+
+#boxTwo:hover {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color:#90ee90;
+}
+
+#boxThree:hover {
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: mediumaquamarine;
+}
+#boxFour:hover {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: plum;
+}
+#boxFive:hover {
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: #ffff66;
+}
+#boxSix:hover {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #ffb347;
+}
