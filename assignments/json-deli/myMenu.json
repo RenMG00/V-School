@@ -1,0 +1,81 @@
+{     "apetizers": [
+    {
+        "name": "Garlic Fries",
+        "ingredients": [
+            "Thick-cut Fries", "Seasoned or Unseasoned", "Fry Sauce"
+        ],
+        "description": "Garlic fries with fry sauce. 3.99"
+    },
+    {
+        "name": "Fried Pickles",
+        "ingredients": [
+            "Beer-battered Fried Pickles", "Ranch"
+        ],
+        "description": "Homestyle fried pickles rounds. 5.99"
+    }
+],
+    "cold sanwiches": [
+        {
+            "name": "Turkey Club",
+            "ingredients": [
+                "Turkey", "Swiss", "Bacon", "Lettuce", "Tomato", "Mustard/Mayo", "Avocado"
+            ],
+            "description": "Turkey club with avocado on wheat bread. 9.99"
+        },
+        {
+            "name": "The Veggie Wrap",
+            "ingredients": [
+                "Hummus", "Cucumbers", "Sprouts", "Avocado", "Green Bell Pepper"
+            ],
+            "description": "Spinach wrap with hummus and mixed veggies. 7.99"
+        }
+    ],
+    "hot sandwiches": [
+        {
+            "name": "Chicken Pesto",
+            "ingredients": [
+                "Chicken", "Pesto", "Sun dried Tomatos", "Arugala", "Peach"
+            ],
+            "description": "Pesto on ciabatta with grilled chicken breast and sun dried tomatos. 8.99"
+        },
+        {
+            "name": "Fried Chicken Sandwich",
+            "ingredients": [
+                "Chicken", "Pickles", "Aoli", "Cole-slaw"
+            ],
+            "description": "Nashville fried chicken sandwich with slaw on top. 9.99"
+        }
+    ],
+    "desserts": [
+        {
+            "name": "Cookies",
+            "ingredients": [
+                "Chocolate Chip", "White Chocolate Macadamia Nut", "Sugar", "Snickerdoodle"
+            ],
+            "description": "Homemade cookies. 2.99"
+        },
+        {
+            "name": "Ice Cream",
+            "ingredients": [
+                "Chocolate", "Vanilla", "Strawberry", "Coffee"
+            ],
+            "description": "Assorted ice-cream flavors on a cone. 1.99"
+        }
+    ],
+    "drinks": [
+        {
+            "name": "Coke-Cola Products",
+            "ingredients": [
+                "Coke-Cola", "Sprite", "Root Beer", "Dr Pepper"
+            ],
+            "description": "Variety of Coke-Cola products. 1.99"
+        },
+        {
+            "name": "Fruit Tea",
+            "ingredients": [
+                "Black Tea", "Pineapple", "Mango", "Peach"
+            ],
+            "description": "Black tea infused with fruit. 3.99"
+        }
+    ]
+}
