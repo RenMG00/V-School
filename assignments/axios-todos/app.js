@@ -81,8 +81,9 @@ const printData = (data) => {
                     .then(res => {
                         console.log("axios put " + data[i]._id);
                         console.log(res.data);
-                        getTodo()
                         todoList.removeChild(checkBox);
+                        todoList.removeChild(checkBoxText);
+                        // getTodo()
                     }).catch(error => console.log(error));
                 }
         })
