@@ -74,18 +74,17 @@ const printData = (data) => {
         checkBox.type = "checkbox";
         checkBox.id = data[i]._id;
 
-        checkBox.addEventListener("click", e => {    
-               
+        checkBox.addEventListener("click", e => {
+
             if (checkBox.checked == true) {
                 axios.put("https://api.vschool.io/RenGian/todo/" + data[i]._id, { completed: true })
                     .then(res => {
                         console.log("axios put " + data[i]._id);
                         console.log(res.data);
                         getTodo()
-                    }).catch(error => {
-                        console.log(error);
-                    });
-            }
+                        todoList.removeChild(checkBox);
+                    }).catch(error => console.log(error));
+                }
         })
 
         deleteButton.addEventListener("click", e => {
