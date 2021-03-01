@@ -124,10 +124,11 @@ const printData = (data) => {
 
                 putData(updateTodo, updateTodoID);
 
-                updateTodo.title = "";
-                updateTodo.description = "";
-                updateTodo.price = "";
-                updateTodo.imgUrl = "";
+                updateDiv.remove(updateTitle, updateDescription, updatePrice, updateImg);
+                // updateTodo.title = "";
+                // updateTodo.description = "";
+                // updateTodo.price = "";
+                // updateTodo.imgUrl = "";
             }
 
 
