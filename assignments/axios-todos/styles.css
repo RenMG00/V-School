@@ -1,0 +1,37 @@
+
+body {
+    background-color:#4C516D;
+    font-family: Georgia;
+}
+
+#title {
+    align-items: center;
+    text-align: center;
+}
+
+.form {
+    align-items: center;
+    text-align: center;
+}
+img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+#todoList {
+    display: flex;
+    justify-content: center;
+}
+.itemDivs {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 350px;
+    padding:  0px 10px 5px 10px;
+    border: 1px solid gray;
+    background-color:#8DA399;
+}
+
+p {
+    font-family: Georgia;
+    font-weight: 500;
+}
