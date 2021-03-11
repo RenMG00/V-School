@@ -2,9 +2,6 @@ import React from "react";
 
 const BlogPost = (props) => {
 
-    const style = {
-        color: "darkslategray"
-    }
     return (
         <div className="blogPost">
             <h2 className="blogTitle">{props.title}</h2>
