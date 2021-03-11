@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    text-align: center;
+    background-color: lightgray;
+}
+#container {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
