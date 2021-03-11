@@ -4,6 +4,7 @@ const todoForm = document.todoform
 const todoList = document.getElementById("todoList");
 const addButton = document.getElementById("addButton");
 const deleteButton = document.createElement("button");
+const listDiv = document.getElementById("listDiv");
 
 
 const getTodo = () => {
@@ -21,24 +22,28 @@ const putData = (obj, id) => {
         .then(response => {
             console.log("axios put " + id);
             console.log(response.data);
+            getTodo();
         }).catch(error => console.log(error));
 }
 
 const printData = (data) => {
     for (let i = 0; i < data.length; i++) {
+        const itemDiv = document.createElement("div");
+        itemDiv.className = "itemDivs";
         const todoTitle = document.createElement("h2");
         const todoDescription = document.createElement("p");
         const todoPrice = document.createElement("p");
         const todoImg = document.createElement("img");
-        const checkBoxText = document.createElement("span");
-        const checkBox = document.createElement("input");
         const updateButton = document.createElement("button");
         const deleteButton = document.createElement("button")
+        const checkBoxText = document.createElement("span");
+        const checkBox = document.createElement("input");
+       
 
         todoTitle.textContent = data[i].title;
-        todoDescription.textContent = data[i].description;
-        todoPrice.textContent = data[i].price;
-        todoImg.textContent = data[i].imgUrl;
+        todoDescription.textContent = `Details: ${data[i].description}`;
+        todoPrice.textContent = `Price: ${data[i].price}`;
+        todoImg.src = data[i].imgUrl;
 
 
         const updateDiv = document.createElement("div");
@@ -62,7 +67,7 @@ const printData = (data) => {
         updatePrice.classList.add(data[i]._id);
         updatePrice.name = "priceUpdate";
 
-        updateImg.type = "Img";
+        updateImg.type = "text";
         updateImg.placeholder = "Img";
         updateImg.classList.add(data[i]._id);
         updateImg.name = "imgUpdate";
@@ -81,9 +86,8 @@ const printData = (data) => {
                     .then(res => {
                         console.log("axios put " + data[i]._id);
                         console.log(res.data);
-                        todoList.removeChild(checkBox);
-                        todoList.removeChild(checkBoxText);
-                        // getTodo()
+                        itemDiv.removeChild(checkBox);
+                        itemDiv.removeChild(checkBoxText);
                     }).catch(error => console.log(error));
                 }
         })
@@ -95,6 +99,8 @@ const printData = (data) => {
             axios.delete("https://api.vschool.io/RenGian/todo/" + data[i]._id)
                 .then(res => {
                     console.log(res.data)
+                   todoList.removeChild(itemDiv);
+                   todoList.removeChild(updateDiv);
                     getTodo();
                 })
                 .catch(err => console.log(err))
@@ -102,7 +108,6 @@ const printData = (data) => {
 
         updateButton.addEventListener("click", e => {
 
-            const updatedItems = document.getElementsByClassName(data[i]._id);
             const editTitle = updateTitle.value;
             const editDescription = updateDescription.value;
             const editPrice = updatePrice.value;
@@ -125,12 +130,8 @@ const printData = (data) => {
                 putData(updateTodo, updateTodoID);
 
                 updateDiv.remove(updateTitle, updateDescription, updatePrice, updateImg);
-                // updateTodo.title = "";
-                // updateTodo.description = "";
-                // updateTodo.price = "";
-                // updateTodo.imgUrl = "";
+                todoList.removeChild(itemDiv);
             }
-
 
             if (updateButton.textContent === "Update") {
                 updateButton.textContent = "Save";
@@ -143,8 +144,9 @@ const printData = (data) => {
             }
         })
         updateDiv.append(updateTitle, updateDescription, updatePrice, updateImg);
-        todoList.append(todoTitle, todoDescription, todoPrice, todoImg, checkBox, checkBoxText, updateButton, deleteButton);
-        todoList.appendChild(updateDiv)
+        todoList.append(itemDiv);
+        itemDiv.append(todoTitle, todoDescription, todoPrice, todoImg, checkBox, checkBoxText, updateButton, deleteButton);
+        itemDiv.appendChild(updateDiv)
     }
 }
 todoForm.addEventListener("submit", (e) => {
@@ -162,7 +164,7 @@ todoForm.addEventListener("submit", (e) => {
     axios.post("https://api.vschool.io/RenGian/todo", newTodo)
         .then(res => {
             console.log(res.data)
-            getTodo();
+            printData([res.data]);
         })
         .catch(err => console.log(err))
 
