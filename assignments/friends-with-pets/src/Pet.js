@@ -1,5 +1,4 @@
 import React from "react";
-import friends from "./friends"
 
 const Pet = (props) => {
 
