@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+}
+
+.myForm {
+    width: 600px;
+    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding-right: 15px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+input {
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+textarea {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+button {
+    border: 1px solid black;
+}
+.badgeCard {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    width: 610px;
+    border: 1px solid black;
+}
+
+h3 {
+    background-color: gray;
+}
+.nameBadge {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+p {
+    padding: 10px;
+    padding-right: 50px;
+}
+.nameTextArea {
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+span {
+    font-weight: bold;
+}
