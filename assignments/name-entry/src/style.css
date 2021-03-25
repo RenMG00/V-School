@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+}
+
+.myForm {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.title {
+    text-decoration: underline;
+    text-shadow:  1px 1px aquamarine;
+}
+.nameDiv {
+    margin: 10px;
+    padding: 10px;
+    width: 500px;
+
+}
+
+.button {
+    margin-left: 5px;
+    text-shadow:  1px 1px aquamarine;
+}
