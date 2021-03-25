@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+}
+.gridDiv {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+.gridTop {
+    padding: 5px;
+}
