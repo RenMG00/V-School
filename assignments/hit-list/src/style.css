@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    background-color:lightgrey;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+p {
+    padding-top: 20px;
+    font-weight: 900;
+}
+img {
+    width: 150px;
+    height: 150px;
+}
+.hitCard {
+    display: flex;
+    margin-right: 5px;
+    padding: 25px;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.hitList {
+    margin-top: 25px;
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
