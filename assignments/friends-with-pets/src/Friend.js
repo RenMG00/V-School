@@ -5,7 +5,8 @@ import friends from "./friends"
 const Friend = (props) => {
 
      const petList = props.pets.map(pet => <Pet key={pet.name} {...pet}/>)
-    return (
+    
+     return (
         <div style = {{
             marginTop: 5,
             padding: 5,
