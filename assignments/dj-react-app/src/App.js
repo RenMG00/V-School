@@ -39,59 +39,52 @@ class App extends React.Component {
   }
 
   bottomLeftBlue = () => {
-    this.setState({
+    this.setState(prevState => ({
+      ...prevState,
       box2: "#406299"
-    });
+    }));
   }
 
   bottomRightBlue = () => {
-    this.setState(
-      {
+    this.setState(prevState => ({
+      ...prevState,
         box4: "#406299"
-      }
-    );
+      }));
   }
 
   changePurple = () => {
-
-    this.setState(
-      {
+    this.setState(prevState => ({
+      ...prevState,
         box1: "#BA55D3",
         box3: "#BA55D3"
-      }
-    );
+      }));
   }
 
   changeYellow = () => {
-
-    this.setState(
-      {
+    this.setState(prevState => ({
+      ...prevState,
         box1: "#FFD700"
-      }
-    );
+      }));
   }
 
   changeRed = () => {
-    this.setState(
-      {
+    this.setState(prevState => ({
+      ...prevState,
         box2: "#B22222"
-      }
-    );
+      }));
   }
 
   changeGreen = () => {
-    this.setState(
-      {
+    this.setState(prevState => ({
+      ...prevState,
         box3: "#3CB371"
-      }
-    );
+      }));
   }
   changeOrange = () => {
-    this.setState(
-      {
+    this.setState(prevState => ({
+      ...prevState,
         box4: "#FF8C00"
-      }
-    );
+      }));
   }
   
   render = () => {
