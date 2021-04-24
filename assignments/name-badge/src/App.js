@@ -19,12 +19,10 @@ class App extends React.Component {
   }
 
   handleChange = e => {
-    console.log(e.target)
     this.setState(prevState => ({
       ...prevState,
       [e.target.name]: e.target.value
     }))
-    console.log(this.state.firstName)
   }
 
   handleSubmit = e => {
