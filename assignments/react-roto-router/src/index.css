@@ -1,0 +1,58 @@
+
+h1 {
+  background-color: lightgray;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  margin: 5px;
+}
+main {
+  height: 400px;
+  width: 500px;
+}
+p {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.home {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  height: 500px;
+  width: 800px;
+}
+.about {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.services {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+li {
+  text-decoration: underline;
+  list-style-type: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.footer {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+}
