@@ -1,0 +1,45 @@
+
+body {
+    background-color: black;
+    color: white;
+    border: 2px solid yellow;
+    padding-left: 50px;
+}
+a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 30px;
+    color:white;
+    text-shadow: 3cm;
+}
+img {
+    height: 500px;
+    width: 500px;
+    border: 1.5px solid lightblue;
+}
+nav {
+    padding: 5px;
+    margin: 5px;
+}
+p {
+    margin-left: 10px;
+    margin-top: 25px;
+}
+.movieContainer {
+    display: flex;
+    flex-direction: column;
+}
+.movieDetails {
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    margin: 10px;
+}
+.saveButton {
+    width: 100px;
+    display:block;
+    margin-top: 5px;
+}
+.movieCollection {
+    border: 1px solid black;
+}
