@@ -1,49 +1,22 @@
-import React, { useState, useEffect } from "react"
-import axios from "axios"
+import React from "react"
 
 function Collection() {
 
-    const [movieCollection, setMovieCollection] = useState([])
+    const movies = JSON.parse(localStorage.getItem("movieArray"))
 
-    const getMovieCollection = () => {
-        axios.get("")
-            .then(res => {
-                const allMovies = res.data
-                // add our data to state
-                setMovieCollection(allMovies)
-            })
-            .catch(err => console.log(`Error: ${err}`))
-    }
-
-    const deleteMovie = (id) => {
-        let url = `https://jsonplaceholder.typicode.com/users/${id}`
-
-        axios.delete(url).then(res => {
-            const delMovie = movieCollection.filter(movie => id !== movie.id)
-            setMovieCollection(delMovie)
-            console.log('res', res)
-        })
-    }
-    
-    useEffect(() => {
-
-        getMovieCollection()
-
-    }, [])
-
-    const movieList = movieCollection.map(movie => {
-            return (
-                <div className="movieCollection" key={movie.Title}>
-                    <h1>{movie.Title}</h1>
-                    <p>{movie.Year}</p>
-                    <p>{movie.Rated}</p>
-                    <p>{movie.Released}</p>
-                    <p>{movie.Runtime}</p>
-                    <p>{movie.Genre}</p>
-                    <img src={movie.Poster}/>
-                    <button onClick={() => deleteMovie(movie.Title)}>Delete</button>
-                </div>
-            )
+    const movieList = movies.map(movie1 => {
+        return (
+            <div className="movieCollection" key={movie1.Title}>
+                <h1>{movie1.Title}</h1>
+                <p>{movie1.Year}</p>
+                <p>{movie1.Rated}</p>
+                <p>{movie1.Released}</p>
+                <p>{movie1.Runtime}</p>
+                <p>{movie1.Genre}</p>
+                <img src={movie1.Poster} />
+                <button>Delete</button>
+            </div>
+        )
     })
     return (
         <div className="movieCollection">
