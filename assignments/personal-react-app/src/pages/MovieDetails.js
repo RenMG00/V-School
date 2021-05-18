@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import { MovieContext } from "../components/DataManager"
 
 const MovieDetails = () => {
-
+    
     const { movies } = useContext(MovieContext)
 
     const handleSave = () => {
@@ -31,8 +31,10 @@ const MovieDetails = () => {
                 <p>{movies.Runtime}</p>
                 <p>{movies.Genre}</p>
             </div>
-            <img src={movies.Poster} />
+            <div className="detailsImage">
+            <img src={movies.Poster} alt=""/>
             <button className="saveButton" onClick={handleSave}>Save Movie</button>
+            </div>
         </div>
 
     )

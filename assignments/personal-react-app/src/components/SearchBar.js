@@ -9,17 +9,15 @@ const SearchBar = () => {
   const { movies, getSearchedMovie } = useContext(MovieContext)
 
   const handleChange = e => {
-    const { name, value } = e.target
-    setSearchMovie(value)
-    console.log(value)
-    
+    const { value } = e.target
+    setSearchMovie(value) 
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     getSearchedMovie(searchMovie)
   };
 
-  const BarStyling = { width: "20rem", background: "#F2F1F9", border: "none", padding: "0.5rem" };
+  const BarStyling = { width: "30rem", background: "#F2F1F9", border: "none", padding: "0.5rem" };
   return (
     <div className="searchBar">
       <input

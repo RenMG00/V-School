@@ -8,14 +8,16 @@ function Home(props) {
 
     const { movies } = useContext(MovieContext)
     console.log(movies)
-
+    const style = { fontSize: "40px"}
         return (
             <div className="movieContainer">
+                <h1 style={style}> Movie Search</h1>
                 <SearchBar />
-                <h1>Welcome to Movie Search</h1>
-                <Link to="/movieDetails">{movies.Title} :</Link>
+                <div className="homeMovie">
+                <Link to="/movieDetails"><h2>{movies.Title}</h2></Link>
                 <h3>{movies.Genre}</h3>
-                <img src={movies.Poster}></img>
+                <img src={movies.Poster} alt=""></img>
+                </div>
             </div>
         )
 }
