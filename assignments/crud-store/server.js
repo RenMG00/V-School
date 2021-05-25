@@ -1,13 +1,16 @@
 const express = require("express")
 const app = express()
 const mongoose = require("mongoose")
+//mongoose.set('bufferCommands', false);
+
 
 app.use(express.json())
 
-    mongoose.connect("mongodb://localhost:27017/crudstoredb", {
+    mongoose.connect("mongodb://127.0.0.1:27017/ crudstoredb", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true
+    useCreateIndex: true,
+    useFindAndModify: false
 }, () => console.log('Connected to the db'))
       
 
