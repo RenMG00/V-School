@@ -10,6 +10,6 @@ app.use(morgan("dev")) // Logs requests to the console
 app.use("/bounty", require("./routes/bountyRouter.js"))
 
 //Server Listen
-app.listen(9000, () => {
-    console.log("The server is running on Port 9000")
+app.listen(7000, () => {
+    console.log("The server is running on Port 7000")
 })
