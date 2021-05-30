@@ -6,7 +6,7 @@ const mongoose = require("mongoose")
 
 app.use(express.json())
 
-    mongoose.connect("mongodb://127.0.0.1:27017/ crudstoredb", {
+    mongoose.connect("mongodb://localhost:27017/crudstore", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
@@ -21,6 +21,6 @@ app.use((err, req, res, next) => {
     return res.send({ errMsg: err.message })
 })
 
-app.listen(4800, () => {
-    console.log("Running on port 4800.")
+app.listen(6000, () => {
+    console.log("Running on port 6000.")
 })
